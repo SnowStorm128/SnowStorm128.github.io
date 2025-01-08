@@ -1,0 +1,364 @@
+/* MARK: General
+*/
+:root {
+    --background-pimary: #0B1121;
+    --background-secondary: #0F172A;
+    --background-circle-primary: #22AAFF;
+    --background-circle-secondary: #FF82F5;
+    --foreground: #334155;
+    --hightlight: #0EA5E9;
+    --hightlight-hover: #38BDF8;
+    --font-color-primary: #FFFFFF;
+    --font-color-secondary: #94A3B8;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('assets/fonts/Roboto/Roboto-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: var(--background-pimary);
+    color: var(--font-color-primary);
+    font-family: 'Inter';
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 3rem;
+    padding-top: 87px;
+    padding-bottom: 40px;
+}
+
+p {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+}
+
+a {
+    color: var(--font-color-primary);
+    
+}
+
+/* MARK: Header 
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 40px 54px 0px;
+}
+
+header>* {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+header > nav > a {
+    display: none;
+    margin-left: 44px;
+    text-decoration: none;
+}
+
+header button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(192,192,192,0);
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+}
+
+header button:hover {
+    background-color: rgba(192,192,192,0.4);
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.mobile-nav-content {
+    /* border: solid white 1px; */
+    position: fixed;
+    background-color: var(--foreground);
+    top: 20px;
+    right: 20px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-nav-list {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.mobile-nav-list a {
+    font-family: 'Roboto';
+    display: block;
+    text-decoration: none;  
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--font-color-secondary)
+}
+
+.mobile-nav-content button {
+    margin-right: 20px;
+    margin-top: 12px;
+}
+
+.mobile-nav-content img {
+    width: 15px;
+    height: 15px;
+    filter: invert(75%) sepia(24%) saturate(248%) hue-rotate(176deg) brightness(82%) contrast(91%);
+}
+
+/* MARK: Hero 
+*/
+
+.hero {
+    text-align: center;
+    z-index: 1;
+    margin: 126px 54px 163px;
+
+}
+
+.hero>a {
+    display: block;
+    background-color: var(--hightlight);
+    color: var(--font-color);
+    font-size: 1.125rem;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 33px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.hero > a:hover {
+    background-color: var(--hightlight-hover);
+}
+
+#circle1 {
+    width: 250px;
+    height: 500px;
+    background-color: var(--background-circle-primary);
+    filter: blur(150px);
+    opacity: 60%;
+    border-top-right-radius: 250px;
+    border-bottom-right-radius: 250px;
+    top: 100px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+#circle2 {
+    width: 250px;
+    height: 500px;
+    background-color: var(--background-circle-secondary);
+    filter: blur(150px);
+    opacity: 60%;
+    border-top-left-radius: 250px;
+    border-bottom-left-radius: 250px;
+    top: -50px;
+    right: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+/* MARK: About Me 
+*/
+
+#aboutMe {
+    background-color: var(--background-secondary);
+    padding: 0px 54px 87px;
+}
+
+/* MARK: Skill Sets 
+*/
+
+#skillSets {
+    position: relative;
+    margin: 0px 54px;
+}
+
+#skillSets>ol {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 67px;
+}
+
+#skillSets li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48.3%;
+    height: 118px;
+    background-color: var(--foreground);
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+#skillSets img {
+    width: 60px;
+    height: 60px;
+    margin: 10px
+}
+
+#circle3 {
+    width: 125px;
+    height: 250px;
+    background-color: var(--background-circle-primary);
+    filter: blur(150px);
+    opacity: 70%;
+    border-top-right-radius: 125px;
+    border-bottom-right-radius: 125px;
+    top: 150px;
+    left: -54px;
+    position: absolute;
+    z-index: -1;
+}
+
+#circle4 {
+    width: 125px;
+    height: 250px;
+    background-color: var(--background-circle-secondary);
+    filter: blur(150px);
+    opacity: 70%;
+    border-top-left-radius: 125px;
+    border-bottom-left-radius: 125px;
+    top: 0px;
+    right: -54px;
+    position: absolute;
+    z-index: -1;
+}
+
+#circle5 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--background-circle-primary);
+    filter: blur(150px);
+    opacity: 70%;
+    border-radius: 125px;
+    top: 750px;
+    right: 100px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/* MARK: Projects 
+*/
+
+#projects {
+    background-color: var(--background-secondary);
+    padding: 0px 54px;
+    padding-bottom: 57px;
+}
+
+#projects > ol {
+    list-style-type: none;
+}
+
+#projects li {
+    background-color: var(--foreground);
+    height: 158px;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding: 30px 30px;
+}
+
+#projects a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#projects img:first-child {
+    margin-right: 10px;
+}
+
+#projects img:last-child {
+    margin-left: 10px;
+}
+
+/* MARK: footer 
+*/
+
+footer {
+    margin: 0px 54px;
+}
+
+footer > h2 { 
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer a {
+    font-size: 1.5rem;
+    height: 29px;
+    display: block;
+}
+
+#contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 42px;
+}
+
+#contacts > div {
+    display: flex;
+    width: 400px;
+    margin-bottom: 27px;
+}
+
+#contacts p:first-child {
+    width: 100px;
+}
+
+#contacts img{
+    height: 28px;
+    width: 28px;
+    margin-left: 10px;
+}
