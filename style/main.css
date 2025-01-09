@@ -44,13 +44,13 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 3rem;
-    padding-top: 87px;
-    padding-bottom: 40px;
+    font-size: 2.5rem;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 p {
@@ -70,7 +70,7 @@ header {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    margin: 40px 54px 0px;
+    margin: 32px 16px 0px;
 }
 
 header>* {
@@ -117,7 +117,7 @@ header button:hover {
     background-color: var(--foreground);
     top: 20px;
     right: 20px;
-    width: 400px;
+    width: 300px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -156,7 +156,7 @@ header button:hover {
 .hero {
     text-align: center;
     z-index: 1;
-    margin: 126px 54px 163px;
+    margin: 126px 16px 163px;
 
 }
 
@@ -177,7 +177,7 @@ header button:hover {
     background-color: var(--hightlight-hover);
 }
 
-#circle1 {
+/* #circle1 {
     width: 250px;
     height: 500px;
     background-color: var(--background-circle-primary);
@@ -189,17 +189,31 @@ header button:hover {
     left: 0px;
     position: absolute;
     z-index: -1;
+} */
+
+#circle1 {
+    width: 125px;
+    height: 250px;
+    background-color: var(--background-circle-primary);
+    filter: blur(100px);
+    opacity: 70%;
+    border-top-right-radius: 125px;
+    border-bottom-right-radius: 125px;
+    top: 250px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
 }
 
 #circle2 {
-    width: 250px;
-    height: 500px;
+    width: 125px;
+    height: 250px;
     background-color: var(--background-circle-secondary);
-    filter: blur(150px);
-    opacity: 60%;
-    border-top-left-radius: 250px;
-    border-bottom-left-radius: 250px;
-    top: -50px;
+    filter: blur(100px);
+    opacity: 70%;
+    border-top-left-radius: 125px;
+    border-bottom-left-radius: 125px;
+    top: 50px;
     right: 0px;
     position: absolute;
     z-index: -1;
@@ -210,7 +224,7 @@ header button:hover {
 
 #aboutMe {
     background-color: var(--background-secondary);
-    padding: 0px 54px 87px;
+    padding: 0px 16px 87px;
 }
 
 /* MARK: Skill Sets 
@@ -218,7 +232,7 @@ header button:hover {
 
 #skillSets {
     position: relative;
-    margin: 0px 54px;
+    margin: 0px 16px;
 }
 
 #skillSets>ol {
@@ -250,7 +264,7 @@ header button:hover {
     width: 125px;
     height: 250px;
     background-color: var(--background-circle-primary);
-    filter: blur(150px);
+    filter: blur(100px);
     opacity: 70%;
     border-top-right-radius: 125px;
     border-bottom-right-radius: 125px;
@@ -264,12 +278,12 @@ header button:hover {
     width: 125px;
     height: 250px;
     background-color: var(--background-circle-secondary);
-    filter: blur(150px);
+    filter: blur(100px);
     opacity: 70%;
     border-top-left-radius: 125px;
     border-bottom-left-radius: 125px;
     top: 0px;
-    right: -54px;
+    right: -16px;
     position: absolute;
     z-index: -1;
 }
@@ -278,7 +292,7 @@ header button:hover {
     width: 200px;
     height: 200px;
     background-color: var(--background-circle-primary);
-    filter: blur(150px);
+    filter: blur(100px);
     opacity: 70%;
     border-radius: 125px;
     top: 750px;
@@ -293,7 +307,7 @@ header button:hover {
 
 #projects {
     background-color: var(--background-secondary);
-    padding: 0px 54px;
+    padding: 0px 16px;
     padding-bottom: 57px;
 }
 
@@ -327,7 +341,7 @@ header button:hover {
 */
 
 footer {
-    margin: 0px 54px;
+    margin: 0px 16px;
 }
 
 footer > h2 { 
