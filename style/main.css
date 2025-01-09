@@ -316,12 +316,13 @@ header button:hover {
 }
 
 #projects li {
+    display: flex;
+    align-items: start;
     background-color: var(--foreground);
-    height: 158px;
     width: 100%;
     border-radius: 15px;
     margin-bottom: 30px;
-    padding: 30px 30px;
+    padding: 30px 15px;
 }
 
 #projects a {
@@ -330,10 +331,11 @@ header button:hover {
 }
 
 #projects img:first-child {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 #projects img:last-child {
+    width: 16px;
     margin-left: 10px;
 }
 
