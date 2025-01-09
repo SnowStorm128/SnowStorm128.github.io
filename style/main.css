@@ -99,7 +99,7 @@ header button, .mobile-nav button {
     border-radius: 50%;
 }
 
-header button:hover {
+header button:hover, .mobile-nav button:hover {
     background-color: var(--nav-hover);
 }
 
