@@ -89,7 +89,8 @@ header>nav>a {
     text-decoration: none;
 }
 
-header button, .mobile-nav button {
+header button,
+.mobile-nav button {
     all: unset;
     display: flex;
     justify-content: center;
@@ -99,7 +100,8 @@ header button, .mobile-nav button {
     border-radius: 50%;
 }
 
-header button:hover, .mobile-nav button:hover {
+header button:hover,
+.mobile-nav button:hover {
     background-color: var(--nav-hover);
 }
 
@@ -191,7 +193,7 @@ header button:hover, .mobile-nav button:hover {
     animation-duration: 0.6s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
-    transition: 
+    transition:
         width 0.2s;
 }
 
@@ -200,6 +202,7 @@ header button:hover, .mobile-nav button:hover {
         transform: translate(0px, -10vh);
         opacity: 0%;
     }
+
     to {
 
         transform: translate(0px, 0px);
@@ -207,7 +210,8 @@ header button:hover, .mobile-nav button:hover {
     }
 }
 
-.hero>a:hover, .hero>a:focus {
+.hero>a:hover,
+.hero>a:focus {
     background-color: var(--hightlight-hover);
     width: 95%;
 }
