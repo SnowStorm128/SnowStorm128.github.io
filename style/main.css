@@ -42,7 +42,7 @@ html {
 body {
     background-color: var(--background-pimary);
     color: var(--font-color-primary);
-    font-family: 'Inter';
+    font-family: 'Inter', Verdana, sans-serif;
 }
 
 h1 {
@@ -56,7 +56,7 @@ h2 {
 }
 
 p {
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 1.5rem;
 }
 
