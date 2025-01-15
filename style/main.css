@@ -6,8 +6,9 @@
     --background-circle-primary: #22AAFF;
     --background-circle-secondary: #FF82F5;
     --foreground: #334155;
-    --hightlight: #0EA5E9;
-    --hightlight-hover: #38BDF8;
+    --hightlight: #2424FF;
+    --hightlight-hover: #2367FF;
+    --hightlight-font: #FFFFFF;
     --font-color-primary: #FFFFFF;
     --font-color-secondary: #94A3B8;
     --nav-hover: rgba(192, 192, 192, 0.4);
@@ -181,7 +182,7 @@ header button:hover,
     opacity: 0%;
     display: block;
     background-color: var(--hightlight);
-    color: var(--font-color);
+    color: var(--hightlight-font);
     font-size: 1.125rem;
     width: 100%;
     height: 60px;
