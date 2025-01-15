@@ -1,14 +1,14 @@
 /* MARK: General
 */
 :root {
-    --background-pimary: #0B1121;
+    --background-primary: #0B1121;
     --background-secondary: #0F172A;
     --background-circle-primary: #22AAFF;
     --background-circle-secondary: #FF82F5;
     --foreground: #334155;
-    --hightlight: #2424FF;
-    --hightlight-hover: #2367FF;
-    --hightlight-font: #FFFFFF;
+    --highlight: #2424FF;
+    --highlight-hover: #2367FF;
+    --highlight-font: #FFFFFF;
     --font-color-primary: #FFFFFF;
     --font-color-secondary: #94A3B8;
     --nav-hover: rgba(192, 192, 192, 0.4);
@@ -17,14 +17,14 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('ttf');
+    src: url('assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('assets/fonts/Roboto/Roboto-Regular.ttf') format('ttf');
+    src: url('assets/fonts/Roboto/Roboto-Regular.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -41,7 +41,7 @@ html {
 }
 
 body {
-    background-color: var(--background-pimary);
+    background-color: var(--background-primary);
     color: var(--font-color-primary);
     font-family: 'Inter', Verdana, sans-serif;
     margin-left: 16px;
@@ -183,8 +183,8 @@ header button:hover,
 .hero>a {
     opacity: 0%;
     display: block;
-    background-color: var(--hightlight);
-    color: var(--hightlight-font);
+    background-color: var(--highlight);
+    color: var(--highlight-font);
     font-size: 1.125rem;
     width: 100%;
     height: 60px;
@@ -215,7 +215,7 @@ header button:hover,
 
 .hero>a:hover,
 .hero>a:focus {
-    background-color: var(--hightlight-hover);
+    background-color: var(--highlight-hover);
     width: 95%;
 }
 
