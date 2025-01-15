@@ -44,6 +44,8 @@ body {
     background-color: var(--background-pimary);
     color: var(--font-color-primary);
     font-family: 'Inter', Verdana, sans-serif;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 h1 {
@@ -73,7 +75,7 @@ header {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    margin: 32px 16px 0px;
+    margin: 32px 0px 0px;
     animation-name: slide-up;
     animation-duration: 0.6s;
     animation-fill-mode: forwards;
@@ -166,7 +168,7 @@ header button:hover,
     align-items: center;
     text-align: center;
     z-index: 1;
-    margin: calc(40vh - 131px) 16px calc(60vh - 131px);
+    margin: calc(40vh - 131px) 0px calc(60vh - 131px);
 
 }
 
@@ -264,7 +266,14 @@ header button:hover,
 
 #aboutMe {
     background-color: var(--background-secondary);
-    padding: 0px 16px 87px;
+    padding-bottom: 87px;
+    position: relative;
+    width: 100vw;
+    left: -16px;
+}
+
+#aboutMe>div {
+    margin: 0px 16px;
 }
 
 /* MARK: Skill Sets 
@@ -272,7 +281,6 @@ header button:hover,
 
 #skillSets {
     position: relative;
-    margin: 0px 16px;
 }
 
 #skillSets>ol {
@@ -323,7 +331,7 @@ header button:hover,
     border-top-left-radius: 125px;
     border-bottom-left-radius: 125px;
     top: 0px;
-    right: -16px;
+    right: -0px;
     position: absolute;
     z-index: -1;
 }
@@ -347,8 +355,15 @@ header button:hover,
 
 #projects {
     background-color: var(--background-secondary);
-    padding: 0px 16px;
     padding-bottom: 57px;
+    position: relative;
+    width: 100vw;
+    left: -16px;
+}
+
+#projects>div {
+    margin: 0px 16px;
+
 }
 
 #projects>ol {
@@ -375,16 +390,13 @@ header button:hover,
 }
 
 #projects img:last-child {
-    width: 16px;
+    width: 0px;
     margin-left: 10px;
 }
 
 /* MARK: footer 
 */
 
-footer {
-    margin: 0px 16px;
-}
 
 footer>h2 {
     font-size: 2rem;
