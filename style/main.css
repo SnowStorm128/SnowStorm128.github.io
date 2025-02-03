@@ -46,6 +46,7 @@ body {
     font-family: 'Inter', Verdana, sans-serif;
     margin-left: 16px;
     margin-right: 16px;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -66,6 +67,13 @@ p {
 a {
     color: var(--font-color-primary);
 
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        max-width: 1060px;
+        margin: 0px auto;
+    }
 }
 
 /* MARK: Header 
@@ -157,6 +165,16 @@ header button:hover,
     width: 15px;
     height: 15px;
     filter: invert(75%) sepia(24%) saturate(248%) hue-rotate(176deg) brightness(82%) contrast(91%);
+}
+
+@media screen and (min-width: 700px) {
+    header>nav>a {
+        display: inline;
+    }
+
+    .mobile-nav-button {
+        display: none;
+    }
 }
 
 /* MARK: Hero 
@@ -259,6 +277,17 @@ header button:hover,
     right: 0px;
     position: absolute;
     z-index: -1;
+}
+
+@media screen and (min-width: 700px) {
+    .hero>a {
+        width: 128px;
+    }
+
+    .hero>a:hover,
+    .hero>a:focus {
+        width: 128px;
+    }
 }
 
 /* MARK: About Me 
