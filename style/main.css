@@ -69,10 +69,10 @@ a {
 
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1060px) {
     body {
         max-width: 1060px;
-        margin: 0px auto;
+        margin: 0 auto;
     }
 }
 
@@ -87,6 +87,7 @@ header {
     animation-name: slide-up;
     animation-duration: 0.6s;
     animation-fill-mode: forwards;
+    height: 39px;
 }
 
 header>* {
@@ -186,7 +187,7 @@ header button:hover,
     align-items: center;
     text-align: center;
     z-index: 1;
-    margin: calc(40vh - 131px) 0px calc(60vh - 131px);
+    margin: calc(45vh - 131px) 0px calc(55vh - 131px);
 
 }
 
@@ -280,6 +281,10 @@ header button:hover,
 }
 
 @media screen and (min-width: 700px) {
+    .hero {
+        margin: calc(40vh - 107px) 0px calc(60vh - 107px);
+    }
+
     .hero>a {
         width: 128px;
     }
@@ -292,17 +297,30 @@ header button:hover,
 
 /* MARK: About Me 
 */
-
 #aboutMe {
-    background-color: var(--background-secondary);
-    padding-bottom: 87px;
     position: relative;
-    width: 100vw;
-    left: -16px;
 }
 
 #aboutMe>div {
     margin: 0px 16px;
+    padding-bottom: 87px;
+}
+
+.background {
+    background-color: var(--background-secondary);
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: -16px;
+    top: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+@media screen and (min-width: 1060px){
+    .background {
+        left: calc(530px - 50vw);
+    }
 }
 
 /* MARK: Skill Sets 
@@ -386,8 +404,6 @@ header button:hover,
     background-color: var(--background-secondary);
     padding-bottom: 57px;
     position: relative;
-    width: 100vw;
-    left: -16px;
 }
 
 #projects>div {
